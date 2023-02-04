@@ -1,0 +1,11 @@
+name: Vehicle Content Type
+description: Allow users to add Vehicle content Type.
+package: Vehicle Fleet
+
+type: module
+core_version_requirement: ^9.4 || ^10
+dependencies:
+  - drupal:media
+  - drupal:media_library
+libraries: -vehicle_content_type/js
+  -vehicle_content_type/css

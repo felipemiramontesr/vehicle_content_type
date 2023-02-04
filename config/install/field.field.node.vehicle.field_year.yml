@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.vehicle
+  enforced:
+    module:
+      - vehicle_content_type
+id: node.vehicle.field_year
+field_name: field_year
+entity_type: node
+bundle: vehicle
+label: Year
+description: "Model year: 2023, 2000, 1990, et., "
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

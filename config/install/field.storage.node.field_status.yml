@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - vehicle_content_type
+id: node.field_status
+field_name: field_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    - value: Available
+      label: available
+    - value: On work route
+      label: on-work-route
+    - value: At the mechanic
+      label: at-the-mechanic
+    - value: On loan
+      label: on-loan
+  allowed_values_function: ""
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false
